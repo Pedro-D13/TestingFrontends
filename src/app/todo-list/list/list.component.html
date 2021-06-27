@@ -1,0 +1,8 @@
+<mat-list *ngFor="let each of current_list | async; let i = index">
+  <mat-list-item>
+    <span style="margin: 0 2rem 0"> {{ each }} </span>
+    <button mat-flat-button color="primary" (click)="delete(i)">
+      X
+    </button></mat-list-item
+  >
+</mat-list>
